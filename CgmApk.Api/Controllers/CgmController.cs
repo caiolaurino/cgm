@@ -25,7 +25,7 @@ namespace CgmApk.Api.Controllers
 
                 var conteudo = HttpContext.Current.Request.Form["conteudo"];
                 var email = HttpContext.Current.Request.Form["email"];
-                var autor = HttpContext.Current.Request.Form["nome"];
+                var autor = HttpContext.Current.Request.Form["nome"];  
 
                 if (!IsValidEmail(email))
                     return new Models.RetornoPadrao { CodigoRetorno = 0, DescricaoRetorno = "Email invalido" };
